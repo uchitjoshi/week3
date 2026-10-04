@@ -1,0 +1,257 @@
+<!-- Uchit Joshi Week 3 Assignment -->
+<!DOCTYPE html>
+<!-- Declares that this document uses HTML5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Makes the webpage responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uchit Joshi - Portfolio</title>
+    <!-- Connects the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header>
+        <h1>Uchit Joshi</h1>
+        <p class="subtitle">
+            Information Technology Student | Cybersecurity Enthusiast
+        </p>
+        <!-- ==================== NAVIGATION ==================== -->
+        <nav>
+            <!-- Navigation links to different sections of the page -->
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#interests">Interests</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section id="about">
+        <h2>About Me</h2>
+            <img src="image/profile.jpg"
+                 alt="Profile photo of Uchit Joshi">
+            <p>
+                I am an Information Technology student from Nepal.
+                I am interested in web development, programming,
+                cybersecurity, networking, and emerging technologies.
+            </p>
+            <p>
+                I enjoy learning new technologies and developing
+                practical projects to improve my technical and
+                problem-solving skills.
+            </p>
+        </section>
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <dl>
+                <!-- HTML skill -->
+                <dt>HTML</dt>
+                <dd>
+                    <span class="level beginner">Beginner</span>
+                    Creating semantic and accessible web pages.
+                </dd>
+                <!-- Python skill -->
+                <dt>Python</dt>
+                <dd>
+                    <span class="level intermediate">Intermediate</span>
+                    Programming, problem solving, and basic automation.
+                </dd>
+                <!-- JavaScript skill -->
+                <dt>JavaScript</dt>
+                <dd>
+                    <span class="level beginner">Beginner</span>
+                    Creating interactive web pages.
+                </dd>
+                <!-- SQL skill -->
+                <dt>SQL</dt>
+                <dd>
+                    <span class="level intermediate">Intermediate</span>
+                    Working with databases and SQL queries.
+                </dd>
+                <!-- Cybersecurity skill -->
+                <dt>Cybersecurity</dt>
+                <dd>
+                    <span class="level intermediate">Intermediate</span>
+                    Learning network security, web security,
+                    reconnaissance, and security tools.
+                </dd>
+                <!-- Networking skill -->
+                <dt>Networking</dt>
+                <dd>
+                    <span class="level intermediate">Intermediate</span>
+                    Understanding TCP/IP, subnetting, DNS,
+                    ports, and network communication.
+                </dd>
+                <!-- Linux skill -->
+                <dt>Linux</dt>
+                <dd>
+                    <span class="level beginner">Beginner</span>
+                    Using Linux commands, permissions,
+                    networking, and system administration basics.
+                </dd>
+                <!-- Git skill -->
+                <dt>Git &amp; GitHub</dt>
+                <dd>
+                    <span class="level intermediate">Intermediate</span>
+                    Version control, repositories, commits,
+                    branches, and GitHub Pages.
+                </dd>
+            </dl>
+        </section>
+        <!-- ==================== PROJECTS SECTION ==================== -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!-- Project 1 -->
+            <article>
+                <h3>Banking System</h3>
+                <p>
+                    A simple banking system created using C.
+                    The project focuses on basic banking operations
+                    and programming logic.
+                </p>
+                <a href="https://github.com/uchitjoshi">
+                    View Project
+                </a>
+            </article>
+            <!-- Project 2 -->
+            <article>
+                <h3>Quiz Game</h3>
+                <p>
+                    A simple quiz game created to practice
+                    programming logic, conditions, loops,
+                    and user interaction.
+                </p>
+                <a href="https://github.com/uchitjoshi">
+                    View Project
+                </a>
+            </article>
+            <!-- Project 3 -->
+            <article>
+                <h3>Car Information Website</h3>
+                <p>
+                    A basic website created using HTML and CSS
+                    to present information about different cars.
+                </p>
+                <a href="https://github.com/uchitjoshi">
+                    View Project
+                </a>
+            </article>
+            <!-- Project 4 -->
+            <article>
+                <h3>Python Game</h3>
+                <p>
+                    A Python-based game developed to practice
+                    functions, conditions, loops, and
+                    problem-solving skills.
+                </p>
+                <a href="https://github.com/uchitjoshi">
+                    View Project
+                </a>
+            </article>
+        </section>
+        <!-- ==================== INTERESTS SECTION ==================== -->
+        <section id="interests">
+            <h2>My Interests</h2>
+            <div class="interest-list">
+                <article>
+                    <h3>Cybersecurity</h3>
+                    <p>
+                        Web security, ethical hacking, network security,
+                        and Capture The Flag challenges.
+                    </p>
+                </article>
+                <article>
+                    <h3>Web Development</h3>
+                    <p>
+                        Creating responsive and accessible websites
+                        using HTML, CSS, and JavaScript.
+                    </p>
+                </article>
+                <article>
+                    <h3>Artificial Intelligence</h3>
+                    <p>
+                        Learning about machine learning, data analysis,
+                        and AI-based technologies.
+                    </p>
+                </article>
+                <article>
+                    <h3>Networking</h3>
+                    <p>
+                        Learning about computer networks, protocols,
+                        DNS, TCP/IP, and network security.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <!-- Name field -->
+                <p>
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your name">
+                </p>
+                <!-- Email field -->
+                <p>
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email">
+                </p>
+                <!-- Message field -->
+                <p>
+                    <label for="message">
+                        Message:
+                    </label>
+                    <textarea id="message"
+                              name="message"
+                              placeholder="Write your message here..."></textarea>
+                </p>
+                <!-- Submit button -->
+                <button type="submit">
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Uchit Joshi |
+            Information Technology Student
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

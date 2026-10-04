@@ -1,0 +1,459 @@
+/* =========================================================
+   Uchit Joshi - Personal Portfolio
+   Week 3 Assignment
+   ========================================================= */
+/* =========================================================
+   GENERAL PAGE STYLE
+   Resets the default browser spacing and makes element sizing
+   easier to control throughout the website.
+   ========================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* Sets the main font and improves text readability */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+    /* Main text and page background colors */
+    color: #222;
+    background-color: #f5f5f5;
+}
+/* =========================================================
+   HEADER
+   Creates the main visual area at the top of the portfolio.
+   The dark background provides contrast with the red accent.
+   ========================================================= */
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+
+    /* Red border creates the main accent color */
+    border-bottom: 4px solid #dc2626;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.subtitle {
+    /* Red is used to highlight the professional subtitle */
+    color: #ff4d4d;
+    margin-bottom: 1rem;
+}
+
+/* =========================================================
+   NAVIGATION - FLEXBOX
+   Flexbox is used to arrange navigation links horizontally
+   and keep them centered with equal spacing.
+   ========================================================= */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+
+    /* Allows links to move to another line when needed */
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+}
+
+/* Changes the navigation background when the mouse hovers */
+nav a:hover {
+    background-color: #dc2626;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   Controls the width and alignment of the main portfolio
+   content and prevents the content from becoming too wide.
+   ========================================================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   GENERAL SECTION DESIGN
+   Gives each portfolio section a consistent card-like
+   appearance using spacing, borders, rounded corners,
+   and a subtle shadow.
+   ========================================================= */
+
+section {
+    background-color: white;
+    margin: 2rem 0;
+    padding: 2rem;
+
+    /* Red accent used consistently throughout the design */
+    border-left: 5px solid #dc2626;
+
+    border-radius: 8px;
+    box-shadow: 0 3px 8px #ddd;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+
+    /* Separates section headings from their content */
+    border-bottom: 3px solid #dc2626;
+}
+
+h3 {
+    color: #b91c1c;
+    margin-bottom: 0.5rem;
+}
+
+
+/* =========================================================
+   ABOUT SECTION
+   Centers the personal introduction and creates a circular
+   profile image with a red border.
+   ========================================================= */
+
+#about {
+    text-align: center;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+
+    /* Keeps the image proportional while fitting the area */
+    object-fit: cover;
+
+    /* Creates a circular profile image */
+    border-radius: 50%;
+
+    /* Matches the main red design theme */
+    border: 5px solid #dc2626;
+
+    margin-bottom: 1rem;
+}
+
+#about p {
+    /* Limits paragraph width for better readability */
+    max-width: 750px;
+    margin: 0 auto 1rem;
+}
+
+
+/* =========================================================
+   SKILLS SECTION - CSS GRID
+   Uses Grid to display skill names and their descriptions
+   in an organized two-column layout.
+   ========================================================= */
+
+#skills dl {
+    display: grid;
+
+    /* First column = skill name
+       Second column = skill description */
+    grid-template-columns: 1fr 2fr;
+
+    gap: 1rem;
+}
+
+#skills dt {
+    background-color: #111;
+    color: white;
+    padding: 0.8rem;
+    font-weight: bold;
+
+    /* Red border highlights each skill */
+    border-left: 4px solid #dc2626;
+    border-radius: 4px;
+}
+
+#skills dd {
+    background-color: #f5f5f5;
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   SKILL LEVEL LABELS
+   Creates small labels for identifying beginner and
+   intermediate skill levels.
+   ========================================================= */
+
+.level {
+    display: inline-block;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Gray represents beginner-level skills */
+.beginner {
+    background-color: #6b7280;
+}
+
+/* Red represents intermediate-level skills */
+.intermediate {
+    background-color: #dc2626;
+}
+
+
+/* =========================================================
+   PROJECTS - CSS GRID
+   Displays project cards in two columns on larger screens.
+   ========================================================= */
+
+#projects {
+    display: grid;
+
+    /* Creates two equal-width project columns */
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+/* Makes the Projects heading span across both columns */
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   PROJECT AND INTEREST CARDS
+   Provides a consistent card design for projects and
+   technology interests.
+   ========================================================= */
+
+#projects article,
+.interest-list article {
+    background-color: #fafafa;
+    padding: 1.5rem;
+
+    /* Creates a simple card border */
+    border: 1px solid #ddd;
+
+    /* Red accent identifies the cards */
+    border-left: 4px solid #dc2626;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   PROJECT LINKS
+   Styles project links to look like interactive buttons.
+   ========================================================= */
+
+#projects article a {
+    display: inline-block;
+    background-color: #dc2626;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Darkens the button when the user hovers over it */
+#projects article a:hover {
+    background-color: #991b1b;
+}
+
+
+/* =========================================================
+   INTERESTS - CSS GRID
+   Uses the same two-column grid approach as the Projects
+   section to maintain visual consistency.
+   ========================================================= */
+
+.interest-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+
+/* =========================================================
+   CONTACT FORM
+   Controls the width, spacing, and appearance of the
+   contact form and its input fields.
+   ========================================================= */
+
+form {
+    max-width: 650px;
+
+    /* Centers the form inside the section */
+    margin: auto;
+}
+
+form p {
+    margin-bottom: 1rem;
+}
+
+label {
+    /* Places each label above its input field */
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+input,
+textarea {
+    /* Makes form controls fill the available form width */
+    width: 100%;
+
+    padding: 0.8rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+
+    /* Keeps the form text consistent with the website */
+    font: inherit;
+}
+
+
+/* Highlights the active input field */
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #dc2626;
+}
+
+textarea {
+    /* Provides enough space for longer messages */
+    min-height: 150px;
+
+    /* Allows vertical resizing but prevents horizontal resizing */
+    resize: vertical;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+   Creates the main red action button for the contact form.
+   ========================================================= */
+
+button {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+
+    /* Shows that the button is clickable */
+    cursor: pointer;
+}
+
+/* Provides visual feedback when hovering over the button */
+button:hover {
+    background-color: #991b1b;
+}
+
+
+/* =========================================================
+   FOOTER
+   Uses the same dark and red colors as the header to create
+   a consistent beginning and ending for the webpage.
+   ========================================================= */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+
+    /* Matches the red accent used in the header */
+    border-top: 4px solid #dc2626;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE DESIGN
+   At screen widths of 768px or less, multi-column layouts
+   become single-column layouts for better readability.
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    #projects,
+    .interest-list,
+    #skills dl {
+
+        /* Changes the Grid layout to one column */
+        grid-template-columns: 1fr;
+    }
+
+    /* Reduces section spacing on smaller screens */
+    section {
+        padding: 1.5rem;
+    }
+
+    /* Reduces heading size for tablet screens */
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE DESIGN
+   Additional adjustments are applied below 500px to make
+   the portfolio easier to use on smartphones.
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    /* Changes navigation from horizontal to vertical */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Gives the main content more available screen width */
+    main {
+        width: 94%;
+    }
+
+    /* Reduces section spacing for small screens */
+    section {
+        margin: 1rem 0;
+        padding: 1.2rem;
+    }
+
+    /* Makes the profile image smaller on smartphones */
+    #about img {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Adjusts section heading size for mobile screens */
+    h2 {
+        font-size: 1.5rem;
+    }
+}
